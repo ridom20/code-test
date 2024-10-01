@@ -86,6 +86,23 @@
         autoplay: {
             delay: 3000,
         },
+        breakpoints: {
+            1300: {
+                slidesPerView: 6,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            576: {
+                slidesPerView: 3,
+            },
+            345: {
+                slidesPerView: 2,
+            },
+            0:{
+                slidesPerView: 1,
+            }
+        },
     })
     /*-----------------------------------------------
         :: Slick Nav [ Mobile Menu ]

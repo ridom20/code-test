@@ -4,6 +4,9 @@
 
 .event-area {
     padding: 155px 0px;
+    @media #{$xs-to-md-max} {
+        padding: 100px 0px;
+    }
     &.event-area-bg {
         &::before {
             content: "";
@@ -23,6 +26,10 @@
         gap: 57px;
         margin-bottom: 54px;
         margin-top: 30px;
+        @media #{$xs-to-sm-max} {
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
     .icon-with-title {
         position: relative;
@@ -38,6 +45,9 @@
             font-size: 18px;
             font-weight: 400;
             line-height: normal;
+            @media #{$xs-to-md-max} {
+                font-size: 16px;
+            }
         }
     }
     .event-shape {
@@ -49,6 +59,9 @@
         right: 14%;
         bottom: 0;
         z-index: 2;
+        @media #{$xs-to-md-max} {
+            display: none;
+        }
         .circle-shape {
             position: relative;
             width: 185px;

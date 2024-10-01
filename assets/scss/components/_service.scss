@@ -5,11 +5,18 @@
 .service-area{
     padding-top: 110px;
     padding-bottom: 120px;
+    @media #{$xs-to-md-max} {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
     .section-title{
         max-width: 890px;
         text-align: center;
         margin: auto;
         margin-bottom: 67px;
+        @media #{$xs-to-md-max} {
+            margin-bottom: 35px;
+        }
         .highlight-title{
             margin-bottom: 10px;
         }
@@ -17,6 +24,10 @@
     .single-service{
         background: transparent;
         position: relative;
+        height: 100%;
+        @media #{$xs-to-md-max} {
+            margin-bottom: 40px;
+        }
         .service-image{
             position: relative;
             overflow: hidden;
@@ -45,7 +56,7 @@
             background-color: var(--primary-color);
             position: absolute;
             left: 20px;
-            bottom: 160px;
+            bottom: 30px;
         }
         .service-mini-card{
             background-color: var(--white);
@@ -60,12 +71,18 @@
                     letter-spacing: -0.72px;
                     color: var(--secondary-color);
                     margin-bottom: 0px;
+                    @media #{$xs-to-md-max} {
+                        font-size: 16px;
+                    }
                 }
                 .pera{
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 1.62;
                     color: var(--primary-paragraph);
+                    @media #{$xs-to-md-max} {
+                        font-size: 14px;
+                    }
                 }
             }
         }

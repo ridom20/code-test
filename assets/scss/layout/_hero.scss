@@ -85,6 +85,8 @@
         }
     }
     .hero-thumb {
+        position: relative;
+        z-index: 2;
         img {
             width: 100%;
         }
@@ -135,12 +137,15 @@
         }
     }
 }
-.hero-shape-one {
+.hero-shape-one {  
     position: absolute;
     top: 20%;
     bottom: 0;
     left: 0;
     z-index: 0;
+    @media #{$xs-to-md-max} {
+        display: none;
+    }
 }
 .hero-shape-two {
     position: absolute;
@@ -148,4 +153,5 @@
     bottom: 0;
     right: 0;
     z-index: 0;
+
 }

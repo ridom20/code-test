@@ -188,12 +188,15 @@ select:focus {
     line-height: normal;
     margin-bottom: 30px;
     position: relative;
+    @media #{$xs-to-md-max} {
+        font-size: 20px;
+    }
     &::before {
         content: "";
         display: inline-block;
         border-top: 2px solid var(--primary-color);
         width: 90px;
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 }
 .dotted-highlight {
@@ -204,6 +207,10 @@ select:focus {
     line-height: normal;
     margin-bottom: 30px;
     position: relative;
+    @media #{$xs-to-md-max} {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
     i {
         color: var(--primary-color);
         font-size: 20px;
@@ -217,6 +224,12 @@ select:focus {
         font-size: 68px;
         font-weight: 500;
         line-height: normal;
+        @media #{$xs-to-md-max} {
+            font-size: 40px;
+        }
+        @media #{$xs-to-sm-max} {
+            font-size: 30px;
+        }
     }
     .title {
         color: var(--secondary-color);
@@ -225,6 +238,10 @@ select:focus {
         font-weight: 700;
         line-height: 1.14;
         margin-bottom: 30px;
+        @media #{$xs-to-md-max} {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
     }
 }
 
