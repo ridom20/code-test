@@ -1,0 +1,32 @@
+/*---------------------------------------------
+    :: Mixin
+-----------------------------------------------*/
+
+/*-- Transition --*/
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+/*-- Common styles --*/
+@mixin navbarFont {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    color: var(--white);
+    @media #{$xs-to-xxl-max} {
+        font-size: 14px;
+    }
+}
+
+/*-- Common Images --*/
+@mixin userImg() {
+    width: 57px;
+    min-width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}

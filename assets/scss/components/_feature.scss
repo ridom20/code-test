@@ -1,0 +1,67 @@
+/*---------------------------------------------
+    :: Feature
+-----------------------------------------------*/
+
+.feature-area {
+    padding-top: 130px;
+    padding-bottom: 110px;
+    .feature-title {
+        max-width: 600px;
+        .title {
+            color: var(--primary-title);
+            font-family: var(--Mulish);
+            font-size: 45px;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-bottom: 0;
+        }
+    }
+    .feature-content{
+        .pera{
+            color: var(--primary-paragraph);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            text-transform: capitalize;
+        }
+    }
+    .feature-item{
+        .title{
+            color: var(--primary-title);
+            font-family: var(--Mulish);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.08;
+            text-transform: capitalize;
+            margin-bottom: 0;
+        }
+        .feature-items-header{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 18px;
+            align-items: center;
+            border-bottom: 1px solid var(--primary-border);
+        }
+        .feature-content{
+            .pera{
+               margin-top: 24px; 
+               line-height: 1.87;
+            }
+            .feature-points{
+                margin-top: 16px;
+                .single-list{
+                    color: var(--primary-title);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1.87;
+                    text-transform: capitalize;
+                    i{
+                        font-size: 20px;
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
