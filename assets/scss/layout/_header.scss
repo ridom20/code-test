@@ -57,6 +57,9 @@
                     @media #{$xs-to-xxl-max} {
                         padding: 42px 6px;
                     }
+                    @media #{$xs-to-xl-max} {
+                        padding: 42px 4px;
+                    }
 
                     &.active {
                         position: relative;
@@ -152,20 +155,16 @@
         align-items: center;
         z-index: 1;
         position: relative;
-
-
-        .divider {
-            width: 1px;
-            height: 20px;
+        @media #{$xs-to-md-max} {
+            margin-right: 60px;
         }
-
-        .money {
-            .pera {
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 1.3;
-                color: var(--primary-title);
-            }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    .mobile-menu-custom{
+        @media #{$xs-to-md-max} {
+            padding-top: 10px;
         }
     }
 
@@ -190,7 +189,7 @@
 
                 // mobile Menu button color
                 .slicknav_icon-bar {
-                    background-color: var(--primary-color);
+                    background-color: var(--white);
                     height: 2px;
                     margin: 7px 0;
                 }

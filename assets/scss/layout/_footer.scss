@@ -4,9 +4,18 @@
 .footer-area {
     background-color: var(--footer-bg);
     padding-top: 93px;
+    @media #{$xs-to-md-max} {
+       padding-top: 60px;                 
+    }
     .footer-widget {
         .logo {
             margin-bottom: 42px;
+            @media #{$xs-to-sm-max} {
+                img{
+                    max-width: 160px;
+                }
+                margin-bottom: 30px;
+            }
         }
         &.mxw-260{
             max-width: 260px;
@@ -91,6 +100,9 @@
     }
     .footer-top{
         padding-bottom: 80px;
+        @media #{$xs-to-md-max} {
+            padding-bottom: 60px;                 
+        }
     }
     .footer-bottom{
         padding-top: 40px;

@@ -4,16 +4,21 @@
 .consultant-area {
     padding-top: 58px;
     padding-bottom: 110px;
+    @media #{$xs-to-md-max} {
+        padding-bottom: 70px;
+    }
     .consultant-card-one {
         background-color: var(--light-gray);
         border-radius: 4px;
-        padding: 30px;
         height: 100%;
         padding: 56px 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @media #{$xs-to-md-max} {
+            padding: 20px;
+        }
         .title {
             color: var(--secondary-color);
             font-size: 24px;
@@ -37,6 +42,9 @@
         align-items: center;
         flex-direction: column;
         height: 100%;
+        @media #{$xs-to-md-max} {
+            padding: 30px;
+        }
         .title {
             color: var(--white);
             font-family: var(--Mulish);
@@ -47,6 +55,9 @@
             line-height: normal;
             text-align: center;
             max-width: 305px;
+            @media #{$xs-to-md-max} {
+                font-size: 30px;
+            }
         }
         .fancy-text {
             color: var(--white);
@@ -55,6 +66,9 @@
             font-weight: 400;
             text-transform: uppercase;
             line-height: normal;
+            @media #{$xs-to-md-max} {
+                font-size: 18px;
+            }
         }
     }
     .consultant-card-three {
@@ -65,6 +79,9 @@
         img {
             width: 100%;
         }
+        @media #{$xs-to-md-max} {
+            padding: 30px;
+        }
         .title {
             color: var(--secondary-color);
             font-size: 30px;
@@ -72,15 +89,19 @@
             font-weight: 700;
             line-height: 1.2;
             max-width: 240px;
+            @media #{$xs-to-md-max} {
+                font-size: 18px;
+            }
         }
         .footer {
             display: flex;
             align-items: center;
             gap: 20px;
-            // flex-wrap: wrap;
             padding-top: 42px;
             width: 100%;
-            flex: 1;
+            @media #{$xs-to-xxl-max} {
+                flex-wrap: wrap;
+            }
             .subscribe-section {
                 position: relative;
                 width: 100%;
@@ -95,12 +116,20 @@
                         font-family: var(--Mulish);
                         font-weight: 400;
                         line-height: normal;
+                        @media #{$xs-to-md-max} {
+                            font-size: 14px;
+                        }
                     }
                 }
                 .btn-primary {
                     position: absolute;
                     top: 7px;
                     right: 7px;
+                    @media #{$xs-to-xxl-max} {
+                        position: absolute;
+                        top: 12px;
+                        right: 12px;
+                    }
                 }
             }
         }

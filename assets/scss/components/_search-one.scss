@@ -11,6 +11,9 @@
     @media #{$xs-to-xxl-max} {
         margin-left: 20px;
     }
+    @media #{$xs-to-xl-max} {
+        margin-left: 8px;
+    }
 }
 .search-container {
     display: none;

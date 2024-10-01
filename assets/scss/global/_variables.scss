@@ -41,6 +41,9 @@ $xs-to-xl-min: "(min-width: 1399px)";
 $xs-to-xxl-max: "(max-width: 1599px)";
 $xs-to-xxl-min: "(min-width: 1599px)";
 
+$xs-to-xxxl-max: "(max-width: 1699px)";
+$xs-to-xxxl-min: "(min-width: 1699px)";
+
 /*-- Margin Padding --*/
 @for $i from 6 through 200 {
     /*-- Margin To-Bottom-Left-Right --*/
