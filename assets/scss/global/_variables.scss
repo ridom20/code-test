@@ -6,8 +6,10 @@
     --remix-icon: "remixicon";
     --Mulish: "Mulish", sans-serif;
     --Inter: "Inter", sans-serif;
+    --Nothing: "Nothing You Could Do", cursive;
 
     --white: #fff;
+    --black: #000;
     --gray: #f6f6f6;
     --light-gray: #f9f9f9;
     --primary-color: #27b671;
@@ -16,9 +18,10 @@
     --primary-paragraph: #747474;
     --primary-border: #ddd;
     --event-bg: linear-gradient(90deg, rgb(0 0 0) 40%, rgb(245 194 16 / 92%) 90%);
-    --hero-bg: linear-gradient(180deg, #005151 0%, #27B671 100%);
+    --hero-bg: linear-gradient(180deg, #005151 0%, #27b671 100%);
     --blog-bg: rgba(0, 81, 81, 0.05);
     --footer-bg: #101b20;
+    --ratting-color: #f1bd06;
 }
 
 /*-- Responsive --*/
@@ -40,7 +43,6 @@ $xs-to-xxl-min: "(min-width: 1599px)";
 
 /*-- Margin Padding --*/
 @for $i from 6 through 200 {
-
     /*-- Margin To-Bottom-Left-Right --*/
     .mt-#{1 * $i} {
         margin-top: 1px * $i !important;
@@ -78,7 +80,6 @@ $xs-to-xxl-min: "(min-width: 1599px)";
 
 /*-- Margin Padding  0 --*/
 @for $i from 0 through 0 {
-
     /*-- Margin To-Bottom-Left-Right --*/
     .mt-#{0 * $i} {
         margin-top: 0px * $i !important;

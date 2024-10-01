@@ -2,7 +2,7 @@
     :: Template default css
 -----------------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nothing+You+Could+Do&display=swap');
 
 * {
     scrollbar-color: inherit inherit;
@@ -127,7 +127,7 @@ select:focus {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color) !important;
 }
 
 /*-- Line Clamp --*/
@@ -254,6 +254,20 @@ select:focus {
             border-color: var(--primary-color);
             color: var(--white);
         }
+    }
+    &.btn-primary-outline{
+        background-color: transparent;
+        border-color: var(--primary-color);
+        color: var(--primary-title);
+        &:hover{
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--white);
+        }
+    }
+    &.btn-sm{
+        padding: 10px 30px;
+        font-size: 18px;
     }
 }
 .progressParent {

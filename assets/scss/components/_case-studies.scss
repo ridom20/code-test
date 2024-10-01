@@ -1,0 +1,60 @@
+/*---------------------------------------------
+    :: Case Studies
+-----------------------------------------------*/
+
+.case-studies-area {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    .section-title {
+        max-width: 720px;
+        margin: auto;
+        margin-bottom: 67px;
+        .highlight-title {
+            margin-bottom: 10px;
+        }
+    }
+    .image-wrapper{
+        position: relative;
+        cursor: pointer;
+        img{
+            width: 100%;
+            border-radius: 4px;
+        }
+        @include transition(0.3s);
+        &:hover{
+            .image-tags{
+                opacity: 1;
+            }
+        }
+        .image-tags{
+            position: absolute;
+            bottom: 12px;
+            left: 23px;
+            z-index: 1;
+            opacity: 0;
+            @include transition(0.3s);
+            .first-tag{
+                background-color: var(--white);
+                color: var(--black);
+                font-size: 18px;
+                font-family: var(--Mulish);
+                text-transform: capitalize;
+                font-weight: 600;
+                line-height: normal;
+                padding: 8px 68px 11px 14px;
+            }
+            .second-tag{
+                background-color: var(--primary-color);
+                color: var(--white);
+                font-size: 16px;
+                font-family: var(--Mulish);
+                text-transform: capitalize;
+                font-weight: 500;
+                line-height: normal;
+                padding: 12px 38px;
+                text-align: center;
+                width: fit-content;
+            }
+        }
+    }
+}

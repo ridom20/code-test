@@ -38,187 +38,55 @@
     /*----------------------------------------------
         :: Swiper Slider Active
     ----------------------------------------------*/
-    var swiper = new Swiper(".h1-Hero-active", {
+
+    var swiper = new Swiper(".testimonial-slider-active", {
         effect: "fade",
-        loop: true,
         slidesPerView: 1,
-        speed: 4000,
-        clickable: false,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: false,
-        },
+        clickable: true,
         autoplay: {
-            delay: 6000,
+            delay: 4000,
             disableOnInteraction: false,
-        },
-        scrollbar: {
-            el: ".swiper-pagination",
-        },
-    });
-    var swiper = new Swiper(".testimonialTwo-active", {
-        effect: "fade",
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: false,
-        },
-        autoplay: {
-            delay: 6000,
-        },
+          },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
-        pagination: {
+          },
+          pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        },
-    });
-    var swiper = new Swiper(".testimonialThree-active", {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-    });
-    var swiper = new Swiper(".tourSwiper-active", {
-        loop: true,
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 24,
-        autoplay: {
-            delay: 6000,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
-                slidesPerView: 2,
-            },
-        },
-    });
-    var swiper = new Swiper(".favSwiper-active", {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 24,
-        autoplay: {
-            delay: 6000,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 4,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-        },
-    });
-    var swiper = new Swiper(".brandSwiper-active", {
-        centeredSlides: true,
-        loop: true,
-        speed: 500,
-        slidesPerView: 2,
-        spaceBetween: 40,
-        autoplay: {
-            delay: 3000,
-        },
-        breakpoints: {
-            992: {
-                slidesPerView: 5,
-            },
-            768: {
-                slidesPerView: 3,
-            },
-        },
-    });
-    var swiper = new Swiper(".whySwiper-active", {
-        loop: true,
-        speed: 500,
-        slidesPerView: 1,
-        spaceBetween: 24,
-        autoplay: {
-            delay: 3000,
-        },
-        breakpoints: {
-            992: {
-                slidesPerView: 3,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-        },
-    });
-    var swiper = new Swiper(".bulletLeftSwiper-active", {
-        allowTouchMove: true,
-        slidesPerView: 1,
-        speed: 6000,
-        loop: true,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: true,
-            reverseDirection: true,
-            pauseOnMouseEnter: true,
-        },
-        spaceBetween: 24,
-        breakpoints: {
-            1400: {
-                slidesPerView: 5,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-        },
-    });
-    var swiper = new Swiper(".bulletRightSwiper-active", {
-        allowTouchMove: true,
-        slidesPerView: 1,
-        speed: 6000,
-        loop: true,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        spaceBetween: 24,
-        breakpoints: {
-            1400: {
-                slidesPerView: 5,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-        },
-    });
-    var swiper = new Swiper(".destinationSwiper-active", {
-        slidesPerView: 1,
-        speed: 1000,
-        loop: true,
-        fade: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
+            renderBullet: function (index, customPagination) {
+                const images = [
+                    'assets/images/testimonial/testimonial-1.png',
+                    'assets/images/testimonial/testimonial-2.png',
+                    'assets/images/testimonial/testimonial-3.png'
+                ];
+            
+                // Check if the index is within the range of available images
+                if (index < images.length) {
+                    return `
+                        <div class="slick-custom-dot ${customPagination}">
+                            <div class="testimonial-img-horizontal">
+                                <img class="w-100" src="${images[index]}" alt="testimonial image ${index + 1}">
+                            </div>
+                        </div>
+                    `;
+                }
+            
+                return ''; // Return an empty string if index exceeds the number of images
+            }
+            
+          }
     });
 
+    var swiper = new Swiper(".gallery-slider-active", {
+        loop: true,
+        speed: 500,
+        slidesPerView: 6,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 3000,
+        },
+    })
     /*-----------------------------------------------
         :: Slick Nav [ Mobile Menu ]
     -----------------------------------------------*/

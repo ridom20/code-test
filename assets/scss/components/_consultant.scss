@@ -1,7 +1,108 @@
 /*---------------------------------------------
     :: Consultant
 -----------------------------------------------*/
-.consultant-area{
-    padding-bottom: 120px;
-    
+.consultant-area {
+    padding-top: 58px;
+    padding-bottom: 110px;
+    .consultant-card-one {
+        background-color: var(--light-gray);
+        border-radius: 4px;
+        padding: 30px;
+        height: 100%;
+        padding: 56px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title {
+            color: var(--secondary-color);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .button-section {
+            margin-bottom: 40px;
+        }
+    }
+    .consultant-card-two {
+        background-color: var(--primary-color);
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        .title {
+            color: var(--white);
+            font-family: var(--Mulish);
+            font-size: 45px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 49px;
+            line-height: normal;
+            text-align: center;
+            max-width: 305px;
+        }
+        .fancy-text {
+            color: var(--white);
+            font-family: var(--Nothing);
+            font-size: 25px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: normal;
+        }
+    }
+    .consultant-card-three {
+        background-color: var(--light-gray);
+        border-radius: 4px;
+        padding: 35px 50px;
+        height: 100%;
+        img {
+            width: 100%;
+        }
+        .title {
+            color: var(--secondary-color);
+            font-size: 30px;
+            font-family: var(--Mulish);
+            font-weight: 700;
+            line-height: 1.2;
+            max-width: 240px;
+        }
+        .footer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            // flex-wrap: wrap;
+            padding-top: 42px;
+            width: 100%;
+            flex: 1;
+            .subscribe-section {
+                position: relative;
+                width: 100%;
+                .custom-form {
+                    border: 1px solid var(--secondary-color);
+                    border-radius: 4px;
+                    padding: 24px 15px;
+                    width: 100%;
+                    &::placeholder {
+                        color: var(--primary-paragraph);
+                        font-size: 18px;
+                        font-family: var(--Mulish);
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+                .btn-primary {
+                    position: absolute;
+                    top: 7px;
+                    right: 7px;
+                }
+            }
+        }
+    }
 }

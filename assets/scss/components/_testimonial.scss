@@ -1,0 +1,167 @@
+/*---------------------------------------------
+    :: Testimonial
+-----------------------------------------------*/
+
+.testimonial-area {
+    padding-top: 50px;
+    padding-bottom: 180px;
+    &.testimonial-bg {
+        background-color: #18191d;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../../assets/images/testimonial/testimonial.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+            opacity: 0.1;
+        }
+    }
+    .single-testimonial {
+        padding-left: 250px;
+        .client-info {
+            .ratting {
+                i {
+                    color: var(--ratting-color);
+                }
+            }
+            .pera {
+                margin-top: 32px;
+                color: var(--white);
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 1.28;
+            }
+        }
+        .client-details {
+            display: flex;
+            gap: 43px;
+            margin-top: 16px;
+            .name {
+                color: var(--white);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.66;
+            }
+        }
+    }
+    .testimonial-slider-active {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .swiper-button-next,
+        .swiper-button-prev {
+            &::after {
+                content: "";
+            }
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--primary-color);
+            top: 122%;
+            right: 48px;
+            svg {
+                width: unset;
+                height: unset;
+                path {
+                    fill: var(--white);
+                }
+            }
+        }
+        .swiper-button-prev {
+            right: 104px;
+            left: unset;
+        }
+        .swiper-button-prev.swiper-button-disabled,
+        .swiper-button-next.swiper-button-disabled {
+            opacity: 1;
+            background-color: var(--white);
+            svg {
+                width: unset;
+                height: unset;
+                path {
+                    fill: var(--black);
+                }
+            }
+        }
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            padding-left: 80px;
+        }
+
+        .swiper-pagination-bullet {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            opacity: 0.6;
+            background-color: transparent;
+            transition: opacity 0.3s ease, bottom 0.3s ease;
+
+            .testimonial-img-horizontal {
+                width: 80px;
+                height: 80px;
+                border: 2px solid var(--white);
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            position: absolute;
+            top: -135px;
+            left: 6px;
+            width: 150px;
+            height: 150px;
+            opacity: 1;
+            z-index: 2;
+
+            .testimonial-img-horizontal {
+                width: 150px;
+                height: 150px;
+                border: 2px solid var(--primary-color);
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+            z-index: 1;
+            opacity: 1;
+            position: relative;
+            transform: translate(-600px, 36px);
+        }
+    }
+}
+
+.gallery-area {
+    .gallery-slider-active {
+        .swiper-wrapper {
+            align-items: center;
+            .swiper-slide {
+                width: 100%;
+                &.swiper-slide-active {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
