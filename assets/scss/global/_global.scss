@@ -261,6 +261,10 @@ select:focus {
     &.btn-primary {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
+        &:hover{
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
     }
     &.btn-white {
         background-color: var(--white);
